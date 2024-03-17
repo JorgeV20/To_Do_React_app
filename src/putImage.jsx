@@ -1,5 +1,5 @@
 export function PutImage(){
     return(
-        <img src="src/images/todo_image.jpg" alt="todo_image" />
+        <img style={{width:370}} src="src/images/todo_image.jpg" alt="todo_image" />
     )
 }

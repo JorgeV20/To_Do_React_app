@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react"
 import { NewTodoForm } from "./newTodoForm"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles.css"
 import { TodoList } from "./TodoList"
 import { PutImage } from "./putImage"
+import {NavScroll} from "./NavBar"
 
 export default function App() {
   const [todos, setTodos] = useState(() => {
@@ -45,6 +47,7 @@ export default function App() {
 
   return (
     <>
+      <NavScroll/>
       <PutImage/>
       <NewTodoForm onSubmit={addTodo} />
       <h1 className="header">Todo List</h1>
